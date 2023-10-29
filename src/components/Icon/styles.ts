@@ -2,10 +2,10 @@ import { theme } from '@/styles/theme';
 import styled from 'styled-components';
 
 type IconSizes = 'extrasmall' | 'small' | 'medium' | 'large';
-type IconColor = 'white' | 'inherit';
+type IconColor = 'white' | 'black' | 'inherit';
 
 const sizes: Record<IconSizes, string> = {
-  extrasmall: '12px',
+  extrasmall: '16px',
   small: '24px',
   medium: '32px',
   large: '42px'
@@ -13,6 +13,7 @@ const sizes: Record<IconSizes, string> = {
 
 const colors: Record<IconColor, string> = {
   white: theme.colors.white,
+  black: theme.colors.black,
   inherit: 'currentColor'
 };
 

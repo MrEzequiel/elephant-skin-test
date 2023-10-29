@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     min-height: 100vh;
-    color: ${({ theme }) => theme.colors.neutral50};
+    color: ${({ theme }) => theme.colors.white};
   }
 
 

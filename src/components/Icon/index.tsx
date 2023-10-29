@@ -10,7 +10,7 @@ export const ArrowLongRight = (props: S.IconProps) => (
   >
     <path
       d="M2.2853 16.6008L29.7139 16.6008M29.7139 16.6008L22.1845 24.1302M29.7139 16.6008L22.1845 9.07141"
-      stroke="white"
+      stroke="currentColor"
       strokeWidth="3"
       strokeLinecap="round"
       strokeLinejoin="round"
