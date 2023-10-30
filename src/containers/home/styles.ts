@@ -105,7 +105,6 @@ export const ActionSideBarItem = styled.button`
 export const MainPageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 36px;
 `;
 
 export const HeaderContainer = styled.header`

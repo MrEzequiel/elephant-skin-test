@@ -19,5 +19,5 @@ export const Video = styled.video`
     }
   }
 
-  animation: fadeIn 500ms ease;
+  animation: fadeIn 1000ms ease;
 `;
