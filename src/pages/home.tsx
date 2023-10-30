@@ -8,6 +8,7 @@ import IconButton from '@/components/IconButton';
 import Steps from '@/containers/home/Steps';
 import ActionSideBar from '@/containers/home/ActionSideBar';
 import Header from '@/containers/home/Header';
+import Intro from '@/containers/home/Intro';
 
 const Page: NextPageWithLayout = () => {
   const [tourStarted, setTourStarted] = useState(false);
@@ -31,6 +32,7 @@ const Page: NextPageWithLayout = () => {
 
         <S.MainPageContainer>
           <Header />
+          <Intro onTourStarted={() => setTourStarted(true)} />
         </S.MainPageContainer>
       </S.PageContainer>
     </MainContainer>

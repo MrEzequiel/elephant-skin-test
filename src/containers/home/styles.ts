@@ -102,7 +102,11 @@ export const ActionSideBarItem = styled.button`
   }
 `;
 
-export const MainPageContainer = styled.div``;
+export const MainPageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+`;
 
 export const HeaderContainer = styled.header`
   margin: 32px 32px 0 22px;
@@ -164,4 +168,71 @@ export const UserProfileImage = styled(Image)`
   border: 1px solid rgba(255, 255, 255, 0.32);
   padding: 2px;
   object-fit: cover;
+`;
+
+export const IntroContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  height: 100%;
+  position: relative;
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  animation: slideRight 1500ms ease-in-out;
+`;
+
+export const TitleIntro = styled.h1`
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+`;
+
+export const DescriptionIntro = styled.p`
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.24px;
+  opacity: 0.7;
+  margin: 32px auto 0;
+  max-width: 600px;
+`;
+
+export const BottomContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  position: absolute;
+  bottom: 76px;
+  left: 50%;
+  transform: translateX(-50%);
+`;
+
+export const TitleStartExperience = styled.h3`
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+`;
+
+export const FooterContainer = styled.footer`
+  padding: 0 32px 34px 0;
+  p {
+    text-align: end;
+  }
 `;
