@@ -1,4 +1,11 @@
+import Image from 'next/image';
 import styled from 'styled-components';
+
+export const PageContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100%;
+`;
 
 export const RightWrapper = styled.div`
   display: flex;
@@ -92,6 +99,69 @@ export const ActionSideBarItem = styled.button`
 
   &:hover {
     opacity: 1;
-    text-shadow: 0 0 30px #00acff;
   }
+`;
+
+export const MainPageContainer = styled.div``;
+
+export const HeaderContainer = styled.header`
+  margin: 32px 32px 0 22px;
+
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 22px;
+`;
+
+export const NavigationContainer = styled.nav`
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  gap: 22px;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: ${({ theme }) => theme.gradients.divider};
+  }
+`;
+
+export const NavigationItem = styled.button<{ $isActive?: boolean }>`
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: ${({ $isActive }) => ($isActive ? 600 : 400)};
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  transition: opacity 300ms ease, border-color 300ms ease;
+
+  border-bottom: 2px solid transparent;
+  border-color: ${({ $isActive, theme }) =>
+    $isActive ? theme.colors.white : 'transparent'};
+  opacity: ${({ $isActive }) => ($isActive ? 1 : 0.8)};
+  text-shadow: ${({ $isActive, theme }) =>
+    $isActive ? `0px 0 2px ${theme.colors.white}` : 'none'};
+
+  &:hover {
+    opacity: 1;
+    border-color: ${({ theme }) => theme.colors.white};
+    text-shadow: 0px 0 2px ${({ theme }) => theme.colors.white};
+  }
+`;
+
+export const UserContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 24px;
+`;
+
+export const UserProfileImage = styled(Image)`
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  padding: 2px;
+  object-fit: cover;
 `;
