@@ -1,12 +1,14 @@
 import type { ReactElement } from 'react';
 import type { NextPageWithLayout } from './_app';
+import Image from 'next/image';
+import Link from 'next/link';
+
 import FullscreenVideo from '@/components/FullscreenVideo';
 import MainContainer from '@/components/MainContainer';
-import * as S from '@/containers/login/styles';
-import Image from 'next/image';
 import Button from '@/components/Button';
+import * as S from '@/containers/login/styles';
 import LoginForm from '@/containers/login/LoginForm';
-import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 const Page: NextPageWithLayout = () => {
   return (
@@ -14,7 +16,14 @@ const Page: NextPageWithLayout = () => {
       <S.Container>
         <S.CardContainer>
           <S.ImageContainer>
-            <Image src="/login-cover.jpeg" alt="logo" fill priority />
+            <Image src="/login-cover.jpeg" alt="project cover" fill priority />
+            <S.ImageLogo
+              src="/logo.png"
+              alt="logo"
+              width={220}
+              height={130}
+              priority
+            />
           </S.ImageContainer>
 
           <div>
@@ -43,6 +52,8 @@ const Page: NextPageWithLayout = () => {
             </S.HaveAccount>
           </div>
         </S.CardContainer>
+
+        <Footer />
       </S.Container>
     </MainContainer>
   );

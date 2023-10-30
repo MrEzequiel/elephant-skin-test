@@ -7,6 +7,7 @@ import * as S from '@/containers/stand-by/styles';
 import IconButton from '@/components/IconButton';
 import { ArrowLongRight } from '@/components/Icon';
 import { useRouter } from 'next/navigation';
+import Footer from '@/components/Footer';
 
 const Page: NextPageWithLayout = () => {
   const router = useRouter();
@@ -22,9 +23,9 @@ const Page: NextPageWithLayout = () => {
           />
         </S.BottomContainer>
       </S.Container>
-      <S.Footer>
-        <S.TextFooter>© 2023 Natiivo Miami. All rights reserved.</S.TextFooter>
-      </S.Footer>
+      <S.FooterContainer>
+        <Footer />
+      </S.FooterContainer>
     </MainContainer>
   );
 };

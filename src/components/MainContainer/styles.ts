@@ -8,6 +8,8 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
   z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   display: flex;
   flex-direction: column;

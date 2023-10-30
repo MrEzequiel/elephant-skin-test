@@ -26,11 +26,6 @@ export const Icon = styled.svg<IconProps>`
   width: ${({ size = 'medium' }) => sizes[size]};
   height: ${({ size = 'medium' }) => sizes[size]};
   color: ${({ color = 'inherit' }) => colors[color]};
-  fill: ${({ color = 'inherit' }) => colors[color]};
-
-  path {
-    fill: ${({ color = 'inherit' }) => colors[color]};
-  }
 `;
 
 Icon.defaultProps = {

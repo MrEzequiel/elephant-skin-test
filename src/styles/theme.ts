@@ -3,7 +3,8 @@ export const theme = {
     white: '#FFFFFF',
     black: '#000000',
     primary: '#FFE08F',
-    neutral50: '#F6F6F6'
+    neutral50: '#F6F6F6',
+    error: '#e53935'
   },
   gradients: {
     divider:

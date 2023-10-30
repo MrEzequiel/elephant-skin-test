@@ -36,19 +36,10 @@ export const Title = styled.h1`
   text-transform: uppercase;
 `;
 
-export const Footer = styled.footer`
+export const FooterContainer = styled.footer`
   padding: 34px;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-`;
-
-export const TextFooter = styled.p`
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  text-align: center;
   width: 100%;
 `;

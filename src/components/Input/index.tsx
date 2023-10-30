@@ -6,16 +6,21 @@ export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   icon?: JSX.Element;
   errorText?: string;
+  error?: boolean;
 }
 
 function InputInner(
-  { icon, errorText, ...props }: InputProps,
+  { icon, errorText, error, ...props }: InputProps,
   ref: Ref<HTMLInputElement>
 ) {
   return (
-    <S.Container>
-      <S.Input ref={ref} {...props} />
-    </S.Container>
+    <div>
+      <S.Container>
+        <S.Input ref={ref} $hasIcon={!!icon} $error={error} {...props} />
+        {!!icon && <S.IconContainer>{icon}</S.IconContainer>}
+      </S.Container>
+      {!!errorText && <S.ErrorText>{errorText}</S.ErrorText>}
+    </div>
   );
 }
 
