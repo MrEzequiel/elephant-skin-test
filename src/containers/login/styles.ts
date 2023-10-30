@@ -9,17 +9,6 @@ export const Container = styled.div`
   padding: 48px;
   gap: 32px;
   flex: 1;
-
-  @keyframes slideRight {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  animation: slideRight 1500ms ease-in-out;
 `;
 
 export const CardContainer = styled.div`
@@ -40,6 +29,17 @@ export const CardContainer = styled.div`
   box-shadow: 0px 109.54321px 82.15741px 0px rgba(0, 0, 0, 0.05),
     1px 1px 5px 1px rgba(255, 255, 255, 0.32) inset;
   backdrop-filter: blur(8px);
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  animation: slideRight 1500ms ease-in-out;
 `;
 
 export const ImageContainer = styled.div`
