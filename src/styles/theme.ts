@@ -8,7 +8,9 @@ export const theme = {
   },
   gradients: {
     divider:
-      'linear-gradient(90deg, rgba(255, 255, 255, 0.32) 12.9%, rgba(255, 255, 255, 0) 106.54%)'
+      'linear-gradient(90deg, rgba(255, 255, 255, 0.32) 12.9%, rgba(255, 255, 255, 0) 106.54%)',
+    verticalDivider:
+      'linear-gradient(0deg, rgba(255, 255, 255, 0.00) 12.9%, rgba(255, 255, 255, 0.32) 37.77%, rgba(255, 255, 255, 0.00) 106.54%);'
   }
 };
 
